@@ -56,6 +56,29 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .button-style(darken(@button-bg,12%),white,lighten(@button-bg,10%),white);
+        border-radius: 1em;
+        font-size: 1.4em;
+        width: 100%;
+        text-align:center;
+        padding:0.8em;
+      }
+    }
+  }
+  header{
+    .flex-box-mixin(row,nowrap,initial,center,initial);
+
+  }
+  .fun-bus-text{
+    padding:1em;
+    h1{
+      margin-top: 0.7em;
+      margin-bottom: 0.7em;
+    }
+    p{
+      margin-bottom: 0.7em;
+      border-bottom: 2px dashed @navigation-border;
     }
   }
 }// home

@@ -1,1 +1,15 @@
 // Navigation Styles here
+
+nav{
+    .flex-box-mixin(raw,nowrap,flex-end,initial,initial);
+    flex-grow:1;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size:1.6em;
+        padding:1.1em;
+        &:hover{
+            background:lighten(yellow,16%);
+        }
+    }
+}
