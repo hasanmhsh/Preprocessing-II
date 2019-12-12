@@ -201,19 +201,40 @@ nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home {
+  margin-right: 2em;
+  margin-left: 2em;
+  width: auto;
+  justify-content: center;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -230,9 +251,22 @@ nav a:hover {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: auto;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -243,9 +277,21 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: auto;
+  }
 }
 .home .content-pick .destination .btn {
   background: #107282;
@@ -260,13 +306,34 @@ nav a:hover {
   color: white;
   background: #1fc8e3;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    background: #18aac1;
+    color: white;
+  }
+  .home .content-pick .destination .btn:hover {
+    color: white;
+    background: #3fd0e7;
+  }
+}
 .home header {
+  margin-top: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: initial;
   align-items: center;
   align-content: initial;
+}
+@media (max-width: 500px) {
+  .home header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: initial;
+    align-items: center;
+    align-content: initial;
+  }
 }
 .home .fun-bus-text {
   padding: 1em;
